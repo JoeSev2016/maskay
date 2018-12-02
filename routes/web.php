@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Esta ruta dirige a la vista principal del sistema
+Route::get('/', 'PagesController@getIndex');
 
 Auth::routes();
 
