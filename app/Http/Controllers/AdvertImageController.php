@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\AdvertImage;
 use Illuminate\Http\Request;
-use App\Category;
 
-class CategoryController extends Controller
+class AdvertImageController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -45,10 +41,10 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\AdvertImage  $advertImage
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(AdvertImage $advertImage)
     {
         //
     }
@@ -56,10 +52,10 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\AdvertImage  $advertImage
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit(AdvertImage $advertImage)
     {
         //
     }
@@ -68,10 +64,10 @@ class CategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  \App\AdvertImage  $advertImage
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, AdvertImage $advertImage)
     {
         //
     }
@@ -79,10 +75,10 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Category  $category
+     * @param  \App\AdvertImage  $advertImage
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy(AdvertImage $advertImage)
     {
         //
     }

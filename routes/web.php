@@ -17,3 +17,6 @@ Route::get('/', 'PagesController@getIndex');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Categorias
+Route::resource('categories','CategoryController', ['except' => ['create']]);//Or only
