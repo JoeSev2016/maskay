@@ -17,18 +17,35 @@
                             <p>Mantenimiento <b class="caret"></b></p>
 
                         </a>
-                        <div class="collapse" id=mantenimientos>
+                        <div class="collapse" id="mantenimientos">
                             <ul class="nav">
                                 <li>
-                                    <a href="#">Categorias</a>
+                                    <a href="{{ route('tags.index') }}">Etiquetas</a>
                                 </li>
                                 <li>
-                                    <a href="#">Distritos</a>
+                                    <a href="{{ route('users.index') }}">Usuarios</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
+                        <a data-toggle="collapse" href="#comercial" class="collapsed">
+                            <i class="material-icons">store</i>
+                            <p>Comercial <b class="caret"></b></p>
+
+                        </a>
+                        <div class="collapse" id="comercial">
+                            <ul class="nav">
+                                <li>
+                                    <a href="{{ route('customers.index') }}">Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('adverts.index') }}">Anuncios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{-- <li>
                         <a href="./table.html">
                             <i class="material-icons">content_paste</i>
                             <p>Table List</p>
@@ -63,6 +80,6 @@
                             <i class="material-icons">unarchive</i>
                             <p>Upgrade to PRO</p>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>

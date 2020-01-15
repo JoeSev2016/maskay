@@ -18,13 +18,13 @@ class AdvertTableSeeder extends Seeder
      //    factory(Advert::class, 50)->create();
      //    factory(AdvertImage::class, 100)->create();
 
-    	$categories = factory(Category::class, 5)->create();
-    	$categories->each(function($category){
-    		$adverts = factory(Advert::class, 20)->make();
-    		$category->adverts()->saveMany($adverts);
-    		$adverts->each(function($ad){
-    			$images = factory(AdvertImage::class, 5)->make();
-    			$ad->images()->saveMany($images);
+    	$categories = factory(Category::class, 5)->create();// Creamos 5 categorias
+    	$categories->each(function($category){ // Por cada categoria
+    		$adverts = factory(Advert::class, 10)->make(); //Crea 20 anuncios
+    		$category->adverts()->saveMany($adverts); //Asigna las categorias a cada anuncio
+    		$adverts->each(function($ad){// Por cada anuncio 
+    			$images = factory(AdvertImage::class, 2)->make(); // Crea 2 imagenes
+    			$ad->images()->saveMany($images); // Asigna los anuncios a cada imagen
     		});
     	});
 

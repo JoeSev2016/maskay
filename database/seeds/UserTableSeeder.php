@@ -14,14 +14,22 @@ class UserTableSeeder extends Seeder
     {
         User::create([
         	'name' => 'Jose Alberto',
+            'last_name' => 'Apaza Sevilla',
         	'email' => 'jose281295@hotmail.com',
-        	'password' => bcrypt('123123')
+        	'password' => bcrypt('123123'),
+            'address' => 'Calle Harold Crown 110',
+            'cellphone' => '999132808',
+            'district_id' => 1
         ]);
 
         User::create([
             'name' => 'Rodrigo',
-            'email' => 'rodrigoroti@gmail.com',
-            'password' => bcrypt('123123')
+            'last_name' => 'Delgado Apaza',
+            'email' => 'rodrigorotti@Outlook.com',
+            'password' => bcrypt('123123'),
+            'address' => 'Calle Erick From 111',
+            'cellphone' => '971424241',
+            'district_id' => 1
         ]);
     }
 }
